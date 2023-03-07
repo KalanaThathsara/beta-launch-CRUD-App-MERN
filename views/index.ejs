@@ -1,0 +1,37 @@
+
+<%- include('include/_header')%>
+<!--Main site-->
+ <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-people" class="border-shadow">
+                <span  class="text-gradient">New User</span>
+            </a>
+            <button onclick="window.location.href= '/add-people'" type="button" class="btn btn-primary btn-sm">Add People</button>
+        </div>
+
+        <!-- form handling -->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Display Name</th>
+                        <th>Emp ID</th>
+                        <th>Designation</th>
+                        <th>Emp Type</th>
+                        <th>Experience</th>
+                        <th>Buttons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <%- include('include/_show')%>
+                </tbody>
+            </table>
+        </form>
+       
+        <!-- /form handling -->
+    </div>
+</main>
+<!-- /Main site-->
+
+<%- include('include/_footer')%>

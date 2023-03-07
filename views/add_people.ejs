@@ -1,0 +1,28 @@
+<%- include('include/_header')%>
+
+
+ <!--Main site-->
+ <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/">All Users</a>
+            </div>
+        </div>
+        <div class="form-title text-centre">
+            <h2 class="text-dark">Add People</h2>
+        </div>
+
+        <!-- form handling -->
+        <%- include('include/_form')%>
+        <div >
+            <button type="button" class="btn btn-light btn-sm">Cancel</button>
+            <button type="button" class="btn btn-primary btn-sm">Add People</button>
+        </div>
+        
+        <!-- /form handling -->
+    </div>
+</main>
+<!-- /Main site-->
+
+<%- include('include/_footer')%>

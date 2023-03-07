@@ -1,0 +1,103 @@
+<%- include('include/_header')%>
+
+
+ <!--Main site-->
+ <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/">All Users</a>
+            </div>
+        </div>
+        <div class="form-title text-centre">
+            <h2 class="text-dark">Update People</h2>
+        </div>
+
+        <!-- form handling -->
+        <form method="POST" id="update_people">
+            <div class="form-group">
+                <label for="name" class="text-primary">Full Name*</label><br>
+                <input type="text" name="name" value="<%=user.fullName%>" placeholder="">
+            </div>
+            <div class="new_people">
+                
+                <div class="form-group">
+                    
+                        <label for="name" class="text-primary">Name with initials</label>
+                        <input type="text" name="name" value="<%=user.nameInitials%>" placeholder="">
+                   
+                        <label for="name" class="text-primary">Preferred / Dispaly Name</label>
+                        <input type="text" name="name" value="<%=user.preferedName%>" placeholder="">
+                   
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="name" class="text-primary">Gender</label>
+                        <select type="text" name="name" value="<%=user.Gender%>" placeholder="">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                   
+                        <label for="name" class="text-primary">Date of Birth</label>
+                        <input type="date" name="name" value="<%=user.dob%>" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="name" class="text-primary">Email</label>
+                        <input type="text" name="name" value="<%=user.email%>" placeholder="">
+                    
+                        <label for="name" class="text-primary">Mobile Number</label>
+                        <input type="number" name="name" value="<%=user.mobile%>" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="name" class="text-primary">Designation</label>
+                        <input type="text" name="name" value="<%=user.designation%>" placeholder="">
+                  
+                        <label for="name" class="text-primary">Employee Type</label>
+                        <select type="text" name="name" value="<%=user.employeeType%>" placeholder="">
+                            <option value="full_time">Full Time</option>
+                            <option value="part_time">Part Time</option>
+                            <option value="contract_basis">Contract Basis</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="name" class="text-primary">Joined Date</label>
+                        <input type="date" name="name" value="<%=user.joinedDate%>" placeholder="">
+                   
+                        <label for="name" class="text-primary">Experience</label>
+                        <select type="text" name="name" value="<%=user.experience%>" placeholder="">
+                            <option value="1">1 Year</option>
+                            <option value="2">2 Years</option>
+                            <option value="3">3 Years</option>
+                            <option value="3+">3+ Years</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="name" class="text-primary">Salary</label>
+                        <input type="number" name="name" value="<%=user.salary%>" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="name" class="text-primary">Personal Notes</label><br>
+                    <textarea type="text" name="name" value="<%=user.personalNotes%>" placeholder=""></textarea>
+            </div>
+            </div>
+           
+        </form>
+        <div >
+            <button type="button" class="btn btn-light btn-sm">Cancel</button>
+            <button type="button" class="btn btn-primary btn-sm">Add People</button>
+        </div>
+        
+        <!-- /form handling -->
+    </div>
+</main>
+<!-- /Main site-->
+
+<%- include('include/_footer')%>
